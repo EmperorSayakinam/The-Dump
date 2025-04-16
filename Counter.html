@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            background-color: black;
+
+        }
+        .container {
+            height: 500px;
+            width: 1000px;
+            background-color: #141414;
+            border-radius: 15px;
+            box-shadow: 0 0 20px 5px rgb(255, 255, 255); 
+            display: flex;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+   
+    
+   <div class="container" style="position: absolute; bottom: 200px;">
+        <h1 style="color: white; font-family:'Courier New', Courier, monospace;">Counter: <span id="counter" style="font-family: 'Courier New', Courier, monospace;">Press to begin</span></h1>
+
+        <button style="height: 100px; width: 200px; position: absolute; bottom: 250px; font-family: 'Courier New', Courier, monospace; background-color: #141414; color: white;" onclick="erase()">Counter increase</button>
+   </div>
+   
+   
+   <script>
+        let counter = 0;
+        function erase() {
+            counter++
+            document.getElementById("counter").innerText = counter;
+        }
+    </script>
+    
+</body>
+</html>
